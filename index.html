@@ -245,20 +245,27 @@
                 <span class="author-block"><sup>2</sup>Zhejiang University</span>
               </div>
   
-              <div class="is-size-7" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+              <div class="is-size-7" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
                 <span class="author-block"><sup>*</sup>Corresponding author: wanghuan [at] westlake [dot] edu [dot] cn</span> 
               </div>
   
-              <div class="columns is-centered" style="display: flex; justify-content: center; align-items: center; margin-top: 0.75rem; margin-bottom: 0.75rem;">
+              <div class="columns is-centered logo-stack  mb-0 pb-0">
 
-                <div class="column is-narrow" style="display: flex; justify-content: center; align-items: center;">
-                  <img src="static/images/westlake.png" alt="Westlake University" style="height: 100px; width: auto; object-fit: contain; margin: 0 10px;">
-              </div>
-              
-                <div class="column is-narrow" style="display: flex; justify-content: center; align-items: center;">
-                    <img src="static/images/zju-logo.svg" alt="Zhejiang University" style="height: 100px; width: auto; object-fit: contain; margin: 0 10px;">
+                <div class="logo-row">
+                    <div class="column is-narrow">
+                        <img src="static/images/westlake.png" alt="Westlake University" style="height: 100px;">
+                    </div>
+                    
+                    <div class="column is-narrow">
+                        <img src="static/images/zju-logo.svg" alt="Zhejiang University" style="height: 100px;">
+                    </div>
                 </div>
-              </div>
+                
+                <div class="column is-narrow">
+                    <img src="static/images/logo.jpg" alt="ENCODE LAB" style="height: 100px;">
+                </div>
+            
+            </div>
 
               <div class="column has-text-centered">
                 <div class="publication-links">
@@ -319,7 +326,7 @@
         <div class="content has-text-justified is-size-6">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Large-scale text-to-image diffusion models, while powerful, suffer from prohibitive computational cost. Existing one-shot network pruning methods can hardly be directly applied to them due to the iterative denoising nature of diffusion models. To bridge the gap, this paper presents \textit{OBS-Diff}, a novel one-shot pruning framework that enables accurate and training-free compression of large-scale text-to-image diffusion models. Specifically, (i) OBS-Diff revitalizes the classic Optimal Brain Surgeon (OBS), adapting it to the complex architectures of modern diffusion models and supporting diverse pruning granularity, including unstructured, N:M semi-structured, and structured (MHA heads and FFN neurons) sparsity; (ii) To align the pruning criteria with the iterative dynamics of the diffusion process, by examining the problem from an error-accumulation perspective, we propose a novel timestep-aware Hessian construction that incorporates a logarithmic-decrease weighting scheme, assigning greater importance to earlier timesteps to mitigate potential error accumulation; (iii) Furthermore, a computationally efficient group-wise sequential pruning strategy is proposed to amortize the expensive calibration process. Extensive experiments show that OBS-Diff achieves state-of-the-art one-shot pruning for diffusion models, delivering inference acceleration with minimal degradation in visual quality.
+            Large-scale text-to-image diffusion models, while powerful, suffer from prohibitive computational cost. Existing one-shot network pruning methods can hardly be directly applied to them due to the iterative denoising nature of diffusion models. To bridge the gap, this paper presents <i>OBS-Diff</i>, a novel one-shot pruning framework that enables accurate and training-free compression of large-scale text-to-image diffusion models. Specifically, <b>(i)</b> OBS-Diff revitalizes the classic Optimal Brain Surgeon (OBS), adapting it to the complex architectures of modern diffusion models and supporting diverse pruning granularity, including unstructured, N:M semi-structured, and structured (MHA heads and FFN neurons) sparsity; <b>(ii)</b> To align the pruning criteria with the iterative dynamics of the diffusion process, by examining the problem from an error-accumulation perspective, we propose a novel timestep-aware Hessian construction that incorporates a logarithmic-decrease weighting scheme, assigning greater importance to earlier timesteps to mitigate potential error accumulation; <b>(iii)</b> Furthermore, a computationally efficient group-wise sequential pruning strategy is proposed to amortize the expensive calibration process. Extensive experiments show that OBS-Diff achieves state-of-the-art one-shot pruning for diffusion models, delivering inference acceleration with minimal degradation in visual quality.
           </p>
         </div>
       </div>

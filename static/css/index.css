@@ -797,3 +797,26 @@ a:focus {
 
 
 
+/* Main container to stack the rows vertically */
+.logo-stack {
+  display: flex;
+  flex-direction: column; /* This is the key: stacks children vertically */
+  align-items: center;    /* Centers the rows horizontally */
+  gap: 0rem;              /* Adds some space between the two rows (optional) */
+}
+
+/* Container for the first row of logos */
+.logo-row {
+  display: flex;
+  justify-content: center; /* Centers logos within the first row */
+  align-items: center;
+  gap: 20px;               /* Adds space between the first two logos (optional) */
+}
+
+/* A general style for all images to keep them consistent */
+.logo-stack img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 0rem;
+}
